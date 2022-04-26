@@ -4,6 +4,9 @@ https://ndb796.tistory.com/7?category=897801
 
 # 중앙처리장치(CPU) 작동 원리
 
+![image](https://user-images.githubusercontent.com/24373728/165308543-45ae6ebd-1865-49cb-b2ed-defc5aa115a6.png)
+
+
 ## 중앙처리장치(CPU)
 - 정의: 컴퓨터 시스템을 통제하고 프로그램의 연산을 실행, 처리하는 가장 핵심적인 컴퓨터의 제어 장치로, 인간으로 비유하면 두뇌에 해당하는 장치이다.
 - 구성 요소
