@@ -75,9 +75,9 @@ https://ndb796.tistory.com/7?category=897801
 ### 인출 사이클과 실행 사이클에 의한 명령어 처리 과정
 ![image](https://user-images.githubusercontent.com/24373728/165320285-ca49810f-cb30-402d-bcb0-f99b2354da2a.png)
 
-T0 : MAR ← PC
-T1 : MBR ← M[MAR], PC ← PC+1
-T2 : IR ← MBR
+- T0 : MAR ← PC
+- T1 : MBR ← M[MAR], PC ← PC+1
+- T2 : IR ← MBR
 
 1. PC(명령어의 주소를 저장하고 있음)에 저장된 주소를 MAR로 전달
 2. 저장된 내용을 토대로 주기억장치의 해당 주소에서 명령어를 인출
