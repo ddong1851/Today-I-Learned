@@ -73,6 +73,8 @@ https://ndb796.tistory.com/7?category=897801
 - 이를 더 세분화하면, 간접 사이클과 인터럽트 사이클이 추가된다. 이들은 주소 지정 방식이 필요하거나 인터럽트 요구가 있을 때만 수행된다.
 
 ### 인출 사이클과 실행 사이클에 의한 명령어 처리 과정
+
+#### 인출 사이클의 과정
 ![image](https://user-images.githubusercontent.com/24373728/165320285-ca49810f-cb30-402d-bcb0-f99b2354da2a.png)
 
 - T0 : MAR ← PC
@@ -85,6 +87,17 @@ https://ndb796.tistory.com/7?category=897801
 4. 다음 명령어를 인출하기 위해 PC 값을 증가시킴
 5. MBR에 저장된 내용을 IR에 전달
 
+#### 실행 사이클의 과정(ADD 명령어의 예시)
+![image](https://user-images.githubusercontent.com/24373728/165321383-2130e9e3-5683-4aa2-8d8b-f3cec9c5ba07.png)
 
+- 위에서 인출한 명령어가 ADD라고 가정하자
+- T0 : MAR <- IR(Addr)
+- T1 : MBR <- M[MAR]
+- T2 : AC <- AC + MBR
 
+1. 수행할 명령어를 갖고 있는 IR에서 MAR로 명령어의 주소를 보낸다.
+2. 저장된 내용을 토대로 주기억장치에서 해당 주소에서 명령어를 인출
+3. 인출한 명령어를 MBR에 저장(이전 인출 과정에서 PC+1을 했기에 이번엔 하지 않는다)
+4. MBR에 저장된 명령어인 ADD를 ALU를 통해 수행한다
+5. 해당 결과를 누산기에 저장한다.
 
