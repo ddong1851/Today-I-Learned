@@ -1,0 +1,22 @@
+오늘 느낀 점
+1. GITHUB에 뭘 정리해서 올리려면, 기본적인 MarkDown 은 좀 쓸 줄 알아야 할거 같다.
+2. GIT 오랜만에 쓰려니까 참 어렵다...
+3. Android Kotlin Flow / emit, Call 과 Enqueue 
+Flow 는 단일 값만 반환하는 suspend function 과 달리
+데이터의 흐름을 만들어 순차적으로 데이터를 내보낼 수 있는 유형의 방식이다. 
+
+flow 로 데이터 객체나 변수에 대한 흐름을 만들고, 
+emit 을 사용하여 데이터를 방출하면
+하위 단에서 collect 를 통해 데이터를 받는 구조. 
+
+
+다른 레포에서 개인 레포 clone 하기
+1. git clone (깃 주소)
+2. git remote add 'name' '깃 주소' (새로 업로드 할 로컬 주소 입력)
+	ex) git remote add algorithm https://github.com/ddong1851/Algorithm.git
+3. git remote remote origin (기존 연결되었던 저장소와 연결 해제)
+4. git branch -M main
+5. git push -u 'name' main
+
+
+
